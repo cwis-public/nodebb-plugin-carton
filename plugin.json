@@ -1,0 +1,21 @@
+{
+    "id": "nodebb-plugin-carton",
+    "name": "Carton Jaune, Rouge",
+    "description": "Highlight moderator actions in posts",
+    "url": "https://github.com/cwis-public/nodebb-plugin-carton",
+    "library": "./index.js",
+    "staticDirs": {},
+    "less": [],
+    "hooks": [{
+        "hook": "filter:parse.post",
+        "method": "parse",
+        "priority": 6
+    }, {
+        "hook": "filter:scripts.get",
+        "method": "addScripts"
+    }],
+    "scripts": [
+        "static/js/carton.js"
+    ],
+    "acpScripts": []
+}
