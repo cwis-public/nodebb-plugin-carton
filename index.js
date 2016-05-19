@@ -14,7 +14,7 @@ exports.parse = function(data, callback) {
 		return callback(null, data);
 	}
 
-	User.isAdminOrGlobalMod(data.uid, function(err, isAdminOrGlobalMod) {
+	User.isAdminOrGlobalMod(data.postData.uid, function(err, isAdminOrGlobalMod) {
 		if(isAdminOrGlobalMod) {
 			data.postData.content = data.postData.content
 				.replace(/<p>%carton jaune%/g, "<p><span class=carton-jaune></span>")
