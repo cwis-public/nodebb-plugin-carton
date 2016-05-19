@@ -11,6 +11,7 @@
 	};
 
 	$(window).on('action:posts.loaded', sync);
+	$(window).on('action:posts.edited', sync);
 	$(window).on('action:ajaxify.contentLoaded', sync);
 
 })();

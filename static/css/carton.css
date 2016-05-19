@@ -1,0 +1,7 @@
+.topic .posts>li.carton-jaune-post {
+    border: 4px solid #ffb100;
+}
+
+.topic .posts>li.carton-rouge-post {
+    border: 4px solid #ff0000;
+}

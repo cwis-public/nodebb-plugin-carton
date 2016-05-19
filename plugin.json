@@ -17,5 +17,8 @@
     "scripts": [
         "static/js/carton.js"
     ],
-    "acpScripts": []
+    "acpScripts": [],
+    "css": [
+        "static/css/carton.css"
+    ]
 }
