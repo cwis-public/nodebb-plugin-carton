@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/cwis-public/nodebb-plugin-carton/issues"
   },
-  "homepage": "https://github.com/cwis-public/nodebb-plugin-carton"
+  "homepage": "https://github.com/cwis-public/nodebb-plugin-carton",
+  "dependencies": {
+    "async": "^2.0.0-rc.5"
+  },
+  "nbbpm": {
+    "compatibility": "^1.0.0"
+  }
 }

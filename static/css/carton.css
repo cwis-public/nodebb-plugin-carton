@@ -2,16 +2,39 @@
     border: 4px solid #ffb100;
 }
 
+.topic .posts>li.carton-vert-post {
+    border: 4px solid #00bb88;
+}
+
+.topic .posts>li.carton-rose-post {
+    border: 4px solid hotpink;
+}
+
 .topic .posts>li.carton-rouge-post {
     border: 4px solid #ff0000;
+}
+
+span.carton-vert:before,
+span.carton-rose:before {
+    content: "x";
 }
 span.carton-jaune:before,
 span.carton-rouge:before {
     content: "This is a message from the moderation team";
 }
+html:lang(fr) span.carton-vert:before,
+html:lang(fr) span.carton-rose:before {
+    content: "x";
+}
 html:lang(fr) span.carton-jaune:before,
 html:lang(fr) span.carton-rouge:before {
     content: "Ceci est un message de l'équipe de modération";
+}
+span.carton-vert:before,
+span.carton-rose:before {
+    display: block;
+    color: transparent;
+    height: 2px;
 }
 span.carton-jaune:before,
 span.carton-rouge:before {
@@ -22,6 +45,12 @@ span.carton-rouge:before {
 }
 span.carton-jaune:before {
     background: #ffb100;
+}
+span.carton-vert:before {
+    background: #00bb88;
+}
+span.carton-rose:before {
+    background: hotpink;
 }
 span.carton-rouge:before {
     background: #ff0000;

@@ -7,6 +7,13 @@
     "staticDirs": {},
     "less": [],
     "hooks": [{
+        "hook": "static:app.load",
+        "method": "init"
+    },{
+        "hook": "filter:admin.header.build",
+        "method": "addAdminNavigation"
+
+    },{
         "hook": "filter:parse.post",
         "method": "parse",
         "priority": 6
@@ -20,5 +27,6 @@
     "acpScripts": [],
     "css": [
         "static/css/carton.css"
-    ]
+    ],
+    "templates": "./public/templates"
 }
