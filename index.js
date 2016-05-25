@@ -75,7 +75,7 @@ exports.parse = function(data, callback) {
 			reAnim = new RegExp(settings.get("anim_re")),
 			hasPrivsAnim = hasPrivs;
 
-		(results.groups || []).forEach(function(group) {
+		((results.groups || [])[0] || []).forEach(function(group) {
 			hasPrivsAnim = hasPrivsAnim || reAnim.test(group.name);
 		});
 

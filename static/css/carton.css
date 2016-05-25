@@ -1,57 +1,61 @@
 .topic .posts>li.carton-jaune-post {
-    border: 4px solid #ffb100;
+    border: 3px solid #ffb100 !important;
 }
 
 .topic .posts>li.carton-vert-post {
-    border: 4px solid #00bb88;
+    border: 3px solid #00bb88 !important;
 }
 
 .topic .posts>li.carton-rose-post {
-    border: 4px solid hotpink;
+    border: 3px solid hotpink !important;
 }
 
 .topic .posts>li.carton-rouge-post {
-    border: 4px solid #ff0000;
+    border: 3px solid #ff0000 !important;
 }
 
-span.carton-vert:before,
-span.carton-rose:before {
-    content: "x";
-}
-span.carton-jaune:before,
-span.carton-rouge:before {
-    content: "This is a message from the moderation team";
-}
-html:lang(fr) span.carton-vert:before,
-html:lang(fr) span.carton-rose:before {
-    content: "x";
-}
-html:lang(fr) span.carton-jaune:before,
-html:lang(fr) span.carton-rouge:before {
-    content: "Ceci est un message de l'équipe de modération";
-}
-span.carton-vert:before,
-span.carton-rose:before {
+.topic .posts>li.carton-rouge-post > *:first-child:before,
+.topic .posts>li.carton-jaune-post > *:first-child:before {
+    content: "hello";
     display: block;
-    color: transparent;
-    height: 2px;
-}
-span.carton-jaune:before,
-span.carton-rouge:before {
-    display: block;
-    text-align: center;
+    margin-top: 20px;
     color: white;
     font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-bottom: -10px;
+    content: "This is a message from the moderation team";
 }
-span.carton-jaune:before {
+.topic .posts>li.carton-rouge-post > *:first-child:before {
+    background: #ff0000;
+}
+.topic .posts>li.carton-jaune-post > *:first-child:before {
     background: #ffb100;
 }
-span.carton-vert:before {
-    background: #00bb88;
+
+html:lang(fr) .topic .posts>li.carton-rouge-post > *:first-child:before,
+html:lang(fr) .topic .posts>li.carton-jaune-post > *:first-child:before {
+    content: "Ceci est un message de l'équipe de modération";
 }
-span.carton-rose:before {
-    background: hotpink;
+
+
+li.highlight.carton-rouge-post,
+li.highlight.carton-vert-post,
+li.highlight.carton-jaune-post,
+li.highlight.carton-rose-post {
+    border: none;
 }
-span.carton-rouge:before {
-    background: #ff0000;
+
+li.highlight.carton-rouge-post:before,
+li.highlight.carton-vert-post:before,
+li.highlight.carton-jaune-post:before,
+li.highlight.carton-rose-post:before {
+    border: none !important;
+}
+
+li.highlight.carton-rouge-post:after,
+li.highlight.carton-vert-post:after,
+li.highlight.carton-jaune-post:after,
+li.highlight.carton-rose-post:after {
+    border: none !important;
 }
