@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-carton",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Highlight moderator actions in posts",
   "main": "index.js",
   "scripts": {
